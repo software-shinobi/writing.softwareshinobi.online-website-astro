@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+
+    learn-softwareshinobi-online:
+
+        container_name: learn-softwareshinobi-online
+
+        image: softwareshinobi/learn-softwareshinobi-online:latest
+
+        restart: always
+        
+        ports:
+
+            - "42480:80"
+            
+        networks:
+        
+            - network-software-shinobi-learn
+            
+networks:
+  network-software-shinobi-learn:
